@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>unicode方法 | 前端笔记</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/ymz.github.io/assets/css/0.styles.38f359ee.css" as="style"><link rel="preload" href="/ymz.github.io/assets/js/app.18cec9e1.js" as="script"><link rel="preload" href="/ymz.github.io/assets/js/2.3fcac33d.js" as="script"><link rel="preload" href="/ymz.github.io/assets/js/16.0ba8cfd6.js" as="script"><link rel="prefetch" href="/ymz.github.io/assets/js/10.ea6d3c70.js"><link rel="prefetch" href="/ymz.github.io/assets/js/11.6c4d76bb.js"><link rel="prefetch" href="/ymz.github.io/assets/js/12.f2b1c929.js"><link rel="prefetch" href="/ymz.github.io/assets/js/13.43abe9a7.js"><link rel="prefetch" href="/ymz.github.io/assets/js/14.b0816aa9.js"><link rel="prefetch" href="/ymz.github.io/assets/js/15.4b317062.js"><link rel="prefetch" href="/ymz.github.io/assets/js/17.239296e6.js"><link rel="prefetch" href="/ymz.github.io/assets/js/18.fd8bd521.js"><link rel="prefetch" href="/ymz.github.io/assets/js/19.f083e783.js"><link rel="prefetch" href="/ymz.github.io/assets/js/20.adb48e40.js"><link rel="prefetch" href="/ymz.github.io/assets/js/21.f7f78d0a.js"><link rel="prefetch" href="/ymz.github.io/assets/js/22.782465f6.js"><link rel="prefetch" href="/ymz.github.io/assets/js/23.ab41f2d6.js"><link rel="prefetch" href="/ymz.github.io/assets/js/24.290feec4.js"><link rel="prefetch" href="/ymz.github.io/assets/js/25.081b7327.js"><link rel="prefetch" href="/ymz.github.io/assets/js/3.03ae128f.js"><link rel="prefetch" href="/ymz.github.io/assets/js/4.fbcf4621.js"><link rel="prefetch" href="/ymz.github.io/assets/js/5.ec4b3f90.js"><link rel="prefetch" href="/ymz.github.io/assets/js/6.27888615.js"><link rel="prefetch" href="/ymz.github.io/assets/js/7.e23a1d77.js"><link rel="prefetch" href="/ymz.github.io/assets/js/8.3f02ff57.js"><link rel="prefetch" href="/ymz.github.io/assets/js/9.dea11a2e.js">
+    <link rel="stylesheet" href="/ymz.github.io/assets/css/0.styles.38f359ee.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ymz.github.io/" class="home-link router-link-active"><img src="/ymz.github.io/assets/img/hero.png" alt="前端笔记" class="logo"> <span class="site-name can-hide">前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ymz.github.io/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/ymz.github.io/guide/guide.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Group1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ymz.github.io/ymz.github.io/" class="nav-link">
+  Home
+</a></li><li class="dropdown-subitem"><a href="/ymz.github.io/ymz.github.io/guide/guide.html" class="nav-link">
+  Guide
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Group2
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ymz.github.io/ymz.github.io/" class="nav-link">
+  Home
+</a></li><li class="dropdown-subitem"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/ymz.github.io/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/ymz.github.io/guide/guide.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Group1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ymz.github.io/ymz.github.io/" class="nav-link">
+  Home
+</a></li><li class="dropdown-subitem"><a href="/ymz.github.io/ymz.github.io/guide/guide.html" class="nav-link">
+  Guide
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Group2
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ymz.github.io/ymz.github.io/" class="nav-link">
+  Home
+</a></li><li class="dropdown-subitem"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/ymz.github.io/ymz.github.io/guide/vue/" class="sidebar-heading clickable open"><span>vue</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/ymz.github.io/guide/vue/多页面和单页面.html" class="sidebar-link">多页面如何实现</a></li><li><a href="/ymz.github.io/guide/vue/组件.html" class="sidebar-link">组件</a></li><li><a href="/ymz.github.io/guide/vue/组件通讯.html" class="sidebar-link">组件通讯</a></li><li><a href="/ymz.github.io/guide/vue/路由.html" class="sidebar-link">vue的路由</a></li><li><a href="/ymz.github.io/guide/vue/axios.html" class="sidebar-link">axios</a></li><li><a href="/ymz.github.io/guide/vue/vuex仓库.html" class="sidebar-link">vuex</a></li><li><a href="/ymz.github.io/guide/vue/计算属性和watch.html" class="sidebar-link">计算属性和watch监听</a></li><li><a href="/ymz.github.io/guide/vue/数据的深浅拷贝.html" class="sidebar-link">数据的深浅拷贝</a></li><li><a href="/ymz.github.io/guide/vue/在vue里面使用iconfont.html" class="active sidebar-link">unicode方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ymz.github.io/guide/vue/在vue里面使用iconfont.html#unicode方法" class="sidebar-link">unicode方法</a></li><li class="sidebar-sub-header"><a href="/ymz.github.io/guide/vue/在vue里面使用iconfont.html#font-class的用法" class="sidebar-link">font class的用法</a></li><li class="sidebar-sub-header"><a href="/ymz.github.io/guide/vue/在vue里面使用iconfont.html#symbol的用法" class="sidebar-link">symbol的用法：</a></li></ul></li><li><a href="/ymz.github.io/guide/vue/在vue中使用BetterScroll.html" class="sidebar-link">BetterScroll的使用步骤</a></li><li><a href="/ymz.github.io/guide/vue/在vue中使用swiper.html" class="sidebar-link">在vue中使用swiper</a></li><li><a href="/ymz.github.io/guide/vue/diff算法.html" class="sidebar-link">diff算法</a></li><li><a href="/ymz.github.io/guide/vue/Vue的生命周期.html" class="sidebar-link">生命周期</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/ymz.github.io/guide/面试题/" class="sidebar-heading clickable"><span>面试题</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/ymz.github.io/guide/面试题/BOM.html" class="sidebar-link">bom</a></li><li><a href="/ymz.github.io/guide/面试题/DOM.html" class="sidebar-link">dom</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="unicode方法"><a href="#unicode方法" class="header-anchor">#</a> unicode方法</h2> <p>在index.html里面引入：</p> <div class="language-css extra-class"><pre class="language-css"><code>第一步：在 HTML 页面为字体增加 preload，提升字体加载速度：
+&lt;link rel=<span class="token string">&quot;preload&quot;</span> href=<span class="token string">&quot;//at.alicdn.com/t/font_2722867_2j0nc99ym5c.woff2&quot;</span> as=<span class="token string">&quot;font&quot;</span> type=<span class="token string">&quot;font/woff2&quot;</span> crossorigin=<span class="token string">&quot;anonymous&quot;</span>&gt;
+</code></pre></div><p>在app.vue里面引入：</p> <div class="language-css extra-class"><pre class="language-css"><code>第二步：拷贝项目下面生成的 <span class="token atrule"><span class="token rule">@font-face</span>
+@font-face</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'iconfont'</span><span class="token punctuation">;</span>
+  <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'//at.alicdn.com/t/font_2722867_2j0nc99ym5c.woff2?t=1629425479398'</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'woff2'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+       <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'//at.alicdn.com/t/font_2722867_2j0nc99ym5c.woff?t=1629425479398'</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'woff'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+       <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'//at.alicdn.com/t/font_2722867_2j0nc99ym5c.ttf?t=1629425479398'</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'truetype'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">第三步：定义使用 iconfont 的样式
+.iconfont</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;iconfont&quot;</span> <span class="token important">!important</span><span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+  <span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
+  <span class="token property">-moz-osx-font-smoothing</span><span class="token punctuation">:</span> grayscale<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>最后在标签里面使用</p> <div class="language-css extra-class"><pre class="language-css"><code>第四步：挑选相应图标并获取字体编码，应用于页面
+&lt;span class=<span class="token string">&quot;iconfont&quot;</span>&gt;&amp;#x33<span class="token punctuation">;</span>&lt;/span&gt;
+</code></pre></div><h2 id="font-class的用法"><a href="#font-class的用法" class="header-anchor">#</a> font class的用法</h2> <p>在index.html里面引入：</p> <div class="language-css extra-class"><pre class="language-css"><code>第一步：在 HTML 页面为字体增加 preload，提升字体加载速度：
+&lt;link rel=<span class="token string">&quot;preload&quot;</span> href=<span class="token string">&quot;//at.alicdn.com/t/font_2722867_2j0nc99ym5c.woff2&quot;</span> as=<span class="token string">&quot;font&quot;</span> type=<span class="token string">&quot;font/woff2&quot;</span> crossorigin=<span class="token string">&quot;anonymous&quot;</span>&gt;
+
+第二步：引入项目下面生成的 fontclass 代码：
+&lt;link rel=<span class="token string">&quot;stylesheet&quot;</span> href=<span class="token string">&quot;//at.alicdn.com/t/font_2722867_2j0nc99ym5c.css&quot;</span>&gt;
+</code></pre></div><p>最后一步在标签里面使用：</p> <div class="language-html extra-class"><pre class="language-html"><code>第三步：挑选相应图标并获取类名，应用于页面：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>iconfont icon-xxx<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="symbol的用法"><a href="#symbol的用法" class="header-anchor">#</a> symbol的用法：</h2> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">第一步：引入项目下面生成的 symbol 代码：
+&lt;script src=&quot;//at.alicdn.com/t/font_2722867_2j0nc99ym5c.js&quot;&gt;&lt;/script&gt;
+第二步：加入通用 CSS 代码（引入一次就行）：
+&lt;style&gt;
+.icon</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> -0.15em<span class="token punctuation">;</span>
+  <span class="token property">fill</span><span class="token punctuation">:</span> currentColor<span class="token punctuation">;</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+&lt;/style&gt;
+第三步：挑选相应图标并获取类名，应用于页面：
+&lt;svg class=<span class="token string">&quot;icon&quot;</span> aria-hidden=<span class="token string">&quot;true&quot;</span>&gt;
+  &lt;use <span class="token property">xlink</span><span class="token punctuation">:</span>href=<span class="token string">&quot;#icon-xxx&quot;</span>&gt;&lt;/use&gt;
+&lt;/svg&gt;
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ymz.github.io/guide/vue/数据的深浅拷贝.html" class="prev">
+        数据的深浅拷贝
+      </a></span> <span class="next"><a href="/ymz.github.io/guide/vue/在vue中使用BetterScroll.html">
+        BetterScroll的使用步骤
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/ymz.github.io/assets/js/app.18cec9e1.js" defer></script><script src="/ymz.github.io/assets/js/2.3fcac33d.js" defer></script><script src="/ymz.github.io/assets/js/16.0ba8cfd6.js" defer></script>
+  </body>
+</html>
